@@ -98,6 +98,32 @@ class Profile extends StatelessWidget {
               leading: Icon(Icons.video_label_sharp),
               title: Text("Video"),
             ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(Icons.video_label_sharp),
+              title: Text("Video"),
+            ),
+            new Divider(
+              color: Colors.red,
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(Icons.music_note),
+              title: Text("Music"),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(Icons.video_label_sharp),
+              title: Text("Video"),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(Icons.video_label_sharp),
+              title: Text("Video"),
+            ),
+            new Divider(
+              color: Colors.red,
+            ),
             InkWell(
               onTap: () {},
               child: Container(
@@ -106,9 +132,24 @@ class Profile extends StatelessWidget {
                 height: 48,
                 child: Row(
                   children: [
-                    Icon(Icons.video_call),
+                    Icon(Icons.settings),
                     SizedBox(width: 20),
-                    Text("Video Cell")
+                    Text("Settings")
+                  ],
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                width: double.infinity,
+                height: 48,
+                child: Row(
+                  children: [
+                    Icon(Icons.feedback),
+                    SizedBox(width: 20),
+                    Text("Send feedback")
                   ],
                 ),
               ),
