@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
                                 child: CircleAvatar(
                                   radius: 23,
                                   backgroundImage:
-                                      AssetImage("assets/image/1.png"),
+                                      AssetImage("assets/image/tom.jpg"),
                                 ),
                               ),
                             ],
@@ -55,7 +55,7 @@ class Profile extends StatelessWidget {
                                 child: CircleAvatar(
                                   radius: 23,
                                   backgroundImage:
-                                      AssetImage("assets/image/1.png"),
+                                      AssetImage("assets/image/jerry.jpg"),
                                 ),
                               ),
                             ],
