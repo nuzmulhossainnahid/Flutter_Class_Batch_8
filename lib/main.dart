@@ -1,5 +1,4 @@
-import 'package:app/contart.dart';
-import 'package:app/profile.dart';
+import 'package:app/button_screen.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ void main() {
       title: "Demo App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: ""),
-      home: Profile(),
+      home: ButtonScreen(),
     ),
   );
 }
