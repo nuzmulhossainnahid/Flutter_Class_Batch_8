@@ -167,6 +167,7 @@ class Hw_Button extends StatelessWidget {
           Row(
             children: [
               Container(
+                margin: EdgeInsets.only(left: 40),
                 child: Column(
                   children: <Widget>[
                     Padding(
@@ -196,7 +197,60 @@ class Hw_Button extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Container(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    // ElevatedButton(
+                    //   onPressed: () {},
+                    //   child: Text(
+                    //     "Sign in",
+                    //     style: TextStyle(fontSize: 24),
+                    //   ),
+                    //   style: ElevatedButton.styleFrom(
+                    //       padding: EdgeInsets.symmetric(horizontal: 150, vertical: 22)),
+                    // ),
+
+                    SizedBox(
+                      width: 150,
+                      height: 40,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Sign in",
+                          style: TextStyle(fontSize: 24),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            // padding: EdgeInsets.symmetric(horizontal: 150, vertical: 22),
+                            primary: Colors.red,
+                            elevation: 40,
+                            shadowColor: Colors.green,
+                            // shape: CircleBorder()
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                side: BorderSide(
+                                    color: Colors.black,
+                                    width: 5,
+                                    style: BorderStyle.solid))),
+                      ),
+                    ),
+
+                    TextButton(onPressed: () {}, child: Text("Sign in")),
+
+                    OutlinedButton(onPressed: () {}, child: Text("Sign in")),
+
+                    ElevatedButton.icon(
+                        onPressed: () {},
+                        icon: Icon(Icons.facebook),
+                        label: Text("Log in with facebook")),
+                  ],
+                ),
+              ),
+            ),
+          ]),
         ],
       ),
     );
