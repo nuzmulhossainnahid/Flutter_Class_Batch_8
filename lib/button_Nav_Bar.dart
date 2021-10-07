@@ -41,10 +41,10 @@ class Button_Nav_Bar extends StatelessWidget {
           selectedItemColor: Theme.of(context).colorScheme.onSurface,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.ac_unit_outlined,
+                icon: Icon(Icons.dashboard,
                     size: 40,
                     color: Theme.of(context).colorScheme.onBackground),
-                label: 'Home'),
+                label: 'Dashboard'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.access_alarm,
                     size: 40,
